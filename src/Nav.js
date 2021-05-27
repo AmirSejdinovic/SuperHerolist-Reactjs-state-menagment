@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import {HeroContext} from './HeroContext'
 
 const design = {
   background:"black",
@@ -9,9 +10,10 @@ const design = {
 }
 
 function Nav(){
+  const {heros} = useContext(HeroContext);
   return(<div style={design}>
       <h2>Super Heros</h2>
-      <h2>List of Heros : 2</h2>
+      <h2>List of Heros : {heros.length}</h2>
   </div>)
 }
 

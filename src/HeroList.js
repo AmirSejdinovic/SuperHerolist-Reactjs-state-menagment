@@ -1,12 +1,8 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import HeroContextProvider, {HeroContext} from './HeroContext';
 
 function HeroList(){
- const heros =[
-    {name:"Flash",
-     comic:"DC"
-  },
-  {name:"Ironman",comic:"marvel"}
-  ]
+ const {heros} = useContext(HeroContext);
   return heros.length ?(<div>
    <h2 className="text-white p-2">Below are the SuperHeros List</h2>
 

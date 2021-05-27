@@ -7,7 +7,7 @@ import HeroContextProvider from './HeroContext';
 
 function App() {
   return (
-    <HeroContextProvider>
+   <HeroContextProvider>
     <div>
     <Nav/>
       <HeroForm/>
